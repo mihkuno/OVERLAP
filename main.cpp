@@ -13,8 +13,9 @@ int main() {
 
     // time complexity is O(n^2)
     for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            
+        for (int j = i; j < 5; j++) {
+            // j does not need repeat the iterations of i 
+
             int s = input[i][0];
             int e = input[i][1];
             int os = input[j][0];
